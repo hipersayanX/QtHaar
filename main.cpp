@@ -28,6 +28,7 @@
 int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
+    Q_UNUSED(a)
 
     HaarDetector detector;
 
@@ -52,5 +53,5 @@ int main(int argc, char *argv[])
 
     image.save("result.jpg");
 
-    return 0;
+    return EXIT_SUCCESS;
 }
